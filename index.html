@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bien js</title>
+</head>
+<body>
+Bai 1:
+<button type="button" onclick="print();">Print value</button>
+<br><br><br>
+Bai 2:
+<button type="button" onclick="printImage();">Print image</button>
+<br><br><br>
+Bai 3:
+<button type="button" onclick="testValue();">Kiem Tra Boi So!!</button>
+</body>
+<script>
+    function print() {
+        let i = 10;
+        let f = 20.5;
+        let b = true;
+        let s = "Hà Nội";
+        document.write('i =' + i);
+        document.write('<br/>');
+        document.write("f = " + f);
+        document.write('<br/>');
+        document.write('b = ' + b);
+        document.write('<br/>');
+        document.write('s = ' + s);
+    }
+    function printImage(){
+        let width = 20;
+        let height = 10;
+        let  S = width*height;
+        document.write('S hinh chu nhat = '+ S);
+    }
+    function testValue() {
+
+        let a = prompt('Number A: ');
+        // let length = a.length;
+        let b = prompt('Number B: ');
+        a % b === 0 ? alert('A là bội số của B') : alert('A không phải bội số của B');
+    }
+</script>
+</html>
